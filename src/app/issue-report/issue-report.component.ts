@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Issue } from '../issue';
 import { IssuesService } from '../issues.service';
 
 @Component({
@@ -10,6 +11,8 @@ import { IssuesService } from '../issues.service';
 export class IssueReportComponent implements OnInit {
 
   issueForm : FormGroup | undefined;
+
+  getSuggestion: Issue[] = [];
 
   constructor(
     private builder: FormBuilder,
