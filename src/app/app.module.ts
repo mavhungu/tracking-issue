@@ -7,18 +7,22 @@ import { ClarityModule } from '@clr/angular';
 import { AppComponent } from './app.component';
 import { IssueListComponent } from './issue-list/issue-list.component';
 import { IssueReportComponent } from './issue-report/issue-report.component';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     IssueListComponent,
-    IssueReportComponent
+    IssueReportComponent,
+    ConfirmDialogComponent
   ],
   imports: [
     BrowserModule,
     ClarityModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

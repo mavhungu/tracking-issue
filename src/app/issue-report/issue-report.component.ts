@@ -14,7 +14,7 @@ export class IssueReportComponent implements OnInit {
   constructor(
     private builder: FormBuilder,
     private issueService: IssuesService
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     this.issueForm = this.builder.group({
